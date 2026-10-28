@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 @Getter
 @Setter
-public class ProductRequest {
+public class ProductRequestDTO {
 
     @NotBlank(message = "Product name is required")
     @Size(max = 255, message = "Product name cannot exceed 255 characters")
@@ -26,6 +26,5 @@ public class ProductRequest {
     @NotNull(message = "Stock quantity is required")
     @PositiveOrZero(message = "Stock quantity cannot be negative")
     private Integer stockQuantity;
-
-
 }
+
